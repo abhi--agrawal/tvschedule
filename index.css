@@ -1,0 +1,147 @@
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+	overflow-y: scroll; 
+}
+
+body {
+  background:#c1bdba;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+#div1,#div2{
+	display : block;
+	width : 100%;
+}
+
+.today {
+	float:left;
+	position: relative;
+	margin: 25px 0;
+	border-radius:4px;
+	overflow: hidden;
+	border: 1px solid powderblue;
+	box-shadow:0 4px 10px 4px #13232f;
+}
+
+.today h1{
+	font-size:1.5rem;
+	text-align:center;
+}
+
+.today .show{
+	margin: 5px;
+	display: block;
+	overflow: hidden;
+}
+
+.today .show img{
+	float:left;
+	margin: 5px;
+}
+
+.today .show .data{
+	float:left;
+	width: 60%;
+}
+
+.upcoming {
+	overflow-x: scroll;
+	overflow-y: hidden;
+	border: 1px solid powderblue;
+	box-shadow:0 4px 10px 4px #13232f;
+	border-radius:4px;	
+}
+
+.upcoming h1{
+	font-size:1.5rem;
+	text-align:center;
+}
+
+.upcoming .show{
+	display: inline-block;
+	width: 25%;
+}
+
+.upcoming .show img{	
+	height: 400px;
+}
+
+.tabs {
+	float:right;
+	position: relative;
+	margin: 25px 0;
+	border-radius:4px;
+	overflow: hidden;
+	border: 1px solid powderblue;
+	box-shadow:0 4px 10px 4px #13232f;
+}
+
+ul.tab{
+	list-style: none;
+	text-align:center;
+	margin:auto;
+	padding: 25px 0px 0px 0px; 
+	background:#13232f;	
+}
+		
+ul.tab li {
+	background: #0e634c;
+	color: white;	
+	display: inline-block;
+}
+
+ul.tab li a{
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+	padding: 10px 15px;
+}
+
+ul.tab li a:focus, .active{
+	background: #1ab188;
+}
+
+.content {
+	display:none;
+	padding: 40px; 
+	background:#13232f;
+	width: 600px;
+}
+
+input{
+ margin-bottom: 15px;
+ padding: 5px;
+ width: 100%;
+  font-size:1.5em;
+}
+
+.button {
+  border:0;
+  outline:none;
+  border-radius:0;
+  padding:15px 0;
+  font-size:2rem;
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  background:#1ab188;
+  color:#ffffff;
+  transition:all.5s ease;
+  -webkit-appearance: none;
+}
+.button:hover{
+	background:#0e634c;
+}
+
+.button:focus{
+	background:#0e634c;
+}
+
+.button-block {
+  display:block;
+  width:100%;
+}

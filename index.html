@@ -1,0 +1,62 @@
+<html>
+<head>
+	<title>Personal TV Schedule</title>
+	<link rel="stylesheet" href="index.css">
+	<!-- For AJAX calls-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<!-- input for store js -->
+	<script src="store.min.js"></script>
+	<!-- Our Main JS File-->	
+	<script src="index.js"></script>
+	<!-- Our DOC JS File-->	
+	<script src="document.js"></script>	
+</head>
+<body onload="loading()">  		  
+
+<div id = "div1">
+<div class="today">
+	<h1>Today's Shows</h1>
+	</div>
+
+<div class="tabs">
+
+	<ul class="tab">
+		<li><a id ="addlink" href="#" class="tablinks" onclick="openOperation(event, 'add')">Add Show</a></li>
+		<li><a id ="remlink" href="#" class="tablinks" onclick="openOperation(event, 'remove')">Remove Show</a></li>
+    </ul>
+	
+	<div id="add" class="content">  	  
+	  <form id="addform" method="POST">
+		  
+	  <div>
+		<input type="text" name="name" placeholder="Show Name" required autocomplete="off" />
+		<br>
+		<input type="text" name="id" placeholder="Show ID" required autocomplete="off" />
+		<br>
+		<input type="number" name="season" placeholder="Season" required autocomplete="off" />
+	  </div>			  
+	  <button type="submit" class="button button-block"/>Add It</button>
+		  
+	  </form>
+	</div> 
+	
+	<div id="remove" class="content"> 
+	  <form id="remform" method="POST">
+			  
+	  <div>
+		<input type="text" name="name" placeholder="Show Name" required autocomplete="off" />
+		<br>
+		<input type="number" name="season" placeholder="Season" required autocomplete="off" />
+	  </div>			  
+	  <button type="submit" class="button button-block"/>Remove It</button>
+			  
+	  </form>
+	</div> <! -- rem -->
+
+</div> <! -- tabs -->
+</div>
+<div id = "div2" class = "upcoming">
+<h1>Upcoming</h1>
+</div>
+</body>
+</html>
